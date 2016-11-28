@@ -1,0 +1,121 @@
+@import '../fonts/fonts.css';
+@import '../sass-unit/typography.scss';
+
+body {
+    // overflow: hidden;
+    // overflow-x: hidden;
+    min-width: 1260px;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.top-bar {
+    font-family: 'RobotoSlabRegular', sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin: 0px 30px;
+    padding: 0px 20px;
+    position: relative;
+    height: 57px;
+    background: rgb(50, 57, 70);
+    &::before {
+        position: absolute;
+        left: -32px;
+        top: -33px;
+        width: 44px;
+        height: 86px;
+        content: "";
+        transform: rotate(-40deg);
+        background: rgb(50, 57, 70);
+        z-index: -1;
+    }
+    &::after {
+        position: absolute;
+        right: -32px;
+        top: -33px;
+        width: 44px;
+        height: 86px;
+        content: "";
+        transform: rotate(40deg);
+        background: rgb(50, 57, 70);
+        z-index: -1;
+    }
+}
+
+.top-bar__phones {
+    margin: 0;
+    padding-left: 0;
+    display: inline-block;
+    &-item {
+        display: inline-block;
+        padding-left: 45px;
+        padding-top: 15px;
+        padding-right: 24px;
+        padding-bottom: 15px;
+        &:nth-child(1) {
+            background: url('../img/ico/ico_viber.png') left no-repeat;
+            background-size: 43px;
+        }
+        &:nth-child(2) {
+            background: url('../img/ico/ico_viber.png') left no-repeat;
+            background-size: 43px;
+        }
+        &:nth-child(3) {
+            background: url('../img/ico/ico_skype.png') left no-repeat;
+            background-size: 40px;
+        }
+    }
+}
+
+.top-bar__partner {
+    display: inline-block;
+    background-color: #F47721;
+    margin-left: 115px;
+    padding: 4px 13px 8px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #F0FFFF;
+    &:hover {
+        background-color: #E86911;
+    }
+}
+
+.top-nav {
+    padding: 10px 31px 17px;
+}
+.top-nav__logo {
+    display: inline-block;
+    width: 264px;
+    height: 73px;
+    // margin-left: 31px;
+    cursor: pointer;
+}
+
+.top-nav__menu {
+    display: inline-block;
+    margin-top: 14px;
+    &-item {
+        display: inline-block;
+        padding-left: 24px;
+    }
+    &-ref {
+        font-family: 'RobotoMedium', sans-serif;
+        font-size: 20px;
+        color: #4885BF;
+        text-decoration: none;
+    }
+}
+
+@import '../sass-unit/service_slide.scss';

@@ -1,0 +1,61 @@
+-var pageTitle = "TDL Group"
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='description' content='TDL Group')
+        title= pageTitle
+        link(rel="stylesheet" href="assets/css/normalize.css")
+        link(rel="stylesheet" href="assets/css/grid.css")
+        link(rel="stylesheet" href="assets/css/style_index.css")
+        link(rel="stylesheet" href="assets/libs/owl_220/owl.carousel.min.css")
+        //link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+    body
+        .header
+            .container
+                .top-bar
+                    ul.top-bar__phones
+                        li.top-bar__phones-item +380 50 123-45-68
+                        li.top-bar__phones-item +7 495 123-45-68
+                        li.top-bar__phones-item skype_of_tdl
+                    a.top-bar__partner(href="javascript:void(0);") Партнёрам
+                .top-nav
+                    .row
+                        .col-4-12
+                            img.top-nav__logo(src="assets/img/logo_tdl.png" onclick="window.location.href = 'http://stackoverflow.com';" alt="TDL Group")
+                        .col-8-12.text-right
+                            ul.top-nav__menu
+                                li.top-nav__menu-item
+                                    a.top-nav__menu-ref(href="javascript:void(0);") Услуги
+                                li.top-nav__menu-item
+                                    a.top-nav__menu-ref(href="javascript:void(0);") О компании
+                                li.top-nav__menu-item
+                                    a.top-nav__menu-ref(href="javascript:void(0);") База знаний
+                                li.top-nav__menu-item
+                                    a.top-nav__menu-ref(href="javascript:void(0);") Новости
+                                li.top-nav__menu-item
+                                    a.top-nav__menu-ref(href="javascript:void(0);") Контакты
+                .service-slide
+                    .owl-carousel#owl-service-slide
+                        img.service-slide__item(src="assets/img/service_slide/slide_auto.jpg" alt="Автомобильный транспорт")
+                        img.service-slide__item(src="assets/img/service_slide/slide_train.jpg" alt="Железнодорожный транспорт")
+                        img.service-slide__item(src="assets/img/service_slide/slide_avia.jpg" alt="Авиационный транспорт")
+                    .owl-dots#owl-service-slide-dots
+                        .owl-dot
+                            a.link-navi(href="./") Автомобильный транспорт
+                        .owl-dot
+                            a.link-navi(href="./") Железнодорожный транспорт
+                        .owl-dot
+                            a.link-navi(href="./") Авиационный транспорт
+
+                        //- h2 Перевозка грузов на небольшие расстояния решается привлечением автотранспорта.
+                        //- h2 Наши поезда - веников не вяжут! И точка!
+                        //- h2 Если вы человек, измученный нарзаном - летайте самолётами Аэрофлота!
+
+
+        script(src="assets/libs/jquery/jquery.min.js")
+        script(src="assets/libs/owl_220/owl.carousel.min.js")
+        script(src="assets/js/script_main.js")

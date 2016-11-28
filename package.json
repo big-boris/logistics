@@ -1,0 +1,24 @@
+{
+  "name": "logistics",
+  "version": "1.0.0",
+  "description": "Logistics site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/big-boris/logistics.git"
+  },
+  "author": "big-boris",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-pug": "^3.0.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "jquery": "^3.1.0",
+    "normalize.css": "^4.2.0"
+  }
+}

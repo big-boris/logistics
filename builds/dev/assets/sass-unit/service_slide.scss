@@ -1,0 +1,38 @@
+.service-slide {
+    height: 720px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &__item {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+.owl-dots {
+    position: absolute;
+    top: 64px;
+    left: 84px;
+    z-index: 2;
+}
+.owl-dot {
+    display: block;
+    width: 29.6666666667em;
+    height: 4.375em;
+    color: #efffff;
+    background-color: #31a9f9;
+    margin: 30px 10px;
+    font-family: monospace;
+    line-height: 1.0;
+    text-transform: uppercase;
+    zoom: 2;
+    font-size: 1.25em;
+    padding: 0 1em;
+}
+.owl-dot.active {
+    color: #b81818;
+}
+.link-navi {
+    color: inherit;
+    text-decoration: none;
+}
