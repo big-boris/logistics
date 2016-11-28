@@ -11,7 +11,7 @@ $(document).ready(function() {
         // autoplayTimeout: 5000,
         dotsSpeed: 400,
         items: 1,
-        dotsContainer: '#custom-owl-dots'
+        dotsContainer: '#owl-service-slide-dots'
     });
 
     $('.owl-dot').click(function () {
