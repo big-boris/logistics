@@ -3,9 +3,21 @@
     height: 720px;
     position: relative;
     overflow: hidden;
-}
-img {
-    object-fit: cover;
+    &__item {
+        height: 720px;
+    }
+    .slide-auto {
+        background: url("../img/service_slide/slide_auto.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .slide-train {
+        background: url("../img/service_slide/slide_train.jpg") center no-repeat;
+        background-size: cover;
+    }
+    .slide-avia {
+        background: url("../img/service_slide/slide_avia.jpg") center no-repeat;
+        background-size: cover;
+    }
 }
 .owl-dots {
     position: absolute;
