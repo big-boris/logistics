@@ -1,11 +1,23 @@
 @import '../fonts/fonts.css';
 @import '../sass-unit/typography.scss';
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 body {
     // overflow: hidden;
     // overflow-x: hidden;
-    min-width: 1260px;
-    margin: 0;
+    // min-width: 1260px;
 }
 
 html {
@@ -14,10 +26,6 @@ html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-}
-
-*, *::after, *::before {
-    box-sizing: border-box;
 }
 
 .top-bar {

@@ -11,7 +11,7 @@ html(lang="ru")
         link(rel="stylesheet" href="assets/css/normalize.css")
         link(rel="stylesheet" href="assets/css/grid.css")
         link(rel="stylesheet" href="assets/css/style_index.css")
-        link(rel="stylesheet" href="assets/libs/owl_220/owl.carousel.min.css")
+        //- link(rel="stylesheet" href="assets/libs/owl_220/owl.carousel.min.css")
         //link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
     body
         .header
@@ -47,12 +47,15 @@ html(lang="ru")
                 .service-slide__item.slide-train
                 .service-slide__item.slide-avia
             .owl-dots#owl-service-slide-dots
+                .owl-dot.service-slide-btn
+                    a.service-slide__link(href="./") Автомобильный транспорт
+                    img.service-slide-btn__ico.btn-ico__auto(src="assets/img/ico/ico_servbtn/ico_auto.png" width="60px" height="45px")
                 .owl-dot
-                    a.link-navi(href="./") Автомобильный транспорт
+                    a.service-slide__link(href="./") Железнодорожный транспорт
+                    img.service-slide-btn__ico.btn-ico__train(src="assets/img/ico/ico_servbtn/ico_locomotive.png" width="60px" height="45px")
                 .owl-dot
-                    a.link-navi(href="./") Железнодорожный транспорт
-                .owl-dot
-                    a.link-navi(href="./") Авиационный транспорт
+                    a.service-slide__link(href="./") Авиационный транспорт
+                    img.service-slide-btn__ico.btn-ico__avia(src="assets/img/ico/ico_servbtn/ico_airplane2.png" width="60px" height="45px")
 
             //- h2 Перевозка грузов на небольшие расстояния решается привлечением автотранспорта.
             //- h2 Наши поезда - веников не вяжут! И точка!
